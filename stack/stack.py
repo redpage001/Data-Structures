@@ -85,6 +85,7 @@ class LinkedList:
             current = self.head
             while current.get_next() != self.tail:
                 current = current.get_next()
+            self.tail = None
             self.tail = current
         
         return data
